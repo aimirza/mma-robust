@@ -1,4 +1,6 @@
 #to organize data
+glm <- robustbase::glmrob() # override glm with robust glm
+
 data.org<-function(x,y,pred,mediator=NULL,contmed=NULL,binmed=NULL,binref=NULL,catmed=NULL,
                    catref=NULL,jointm=NULL,refy=rep(NA,ncol(data.frame(y))), 
                    family1=as.list(rep(NA,ncol(data.frame(y)))),
